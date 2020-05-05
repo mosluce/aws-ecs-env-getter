@@ -21,7 +21,9 @@ ecs.describeTaskDefinition(
 
       let container = res.taskDefinition.containerDefinitions[idx];
 
-      for (const env of container.environment) {
+      let environment = container.environment.sort((a, b) => a.name.localeCompare(b.name));
+
+      for (const env of environment) {
         console.log(`${env.name}=${env.value}`);
       }
     }
