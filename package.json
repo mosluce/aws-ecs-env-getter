@@ -4,8 +4,9 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "start": "babel-node src/index.js",
-    "build": "babel -d dist src"
+    "start": "node dist/index.js",
+    "build": "babel -d dist src",
+    "dev": "babel-node src/index.js"
   },
   "keywords": [],
   "author": "",
