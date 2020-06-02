@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { ECS } from 'aws-sdk';
 
 const [, , taskDefinition] = process.argv;
