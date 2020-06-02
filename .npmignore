@@ -1,0 +1,6 @@
+.prettierrc
+.gitignore
+.git
+
+src
+babel.config.js
